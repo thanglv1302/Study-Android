@@ -13,8 +13,7 @@
         android:id="@+id/textView"
         android:textSize="30dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,15 +59,59 @@
         android:text="vibrate"
         android:id="@+id/btnVib"
         android:layout_alignTop="@+id/btnRing"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignParentRight="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Silent"
         android:id="@+id/btnSilent"
+        android:layout_below="@+id/btnMode"
+        android:layout_alignLeft="@+id/btnMode"
+        android:layout_alignStart="@+id/btnMode"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:id="@+id/btnMute"
         android:layout_below="@+id/btnRing"
         android:layout_alignLeft="@+id/btnRing"
         android:layout_alignStart="@+id/btnRing"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MaxVolume"
+        android:id="@+id/btnMaxVolume"
+        android:layout_below="@+id/btnVib"
+        android:layout_alignLeft="@+id/btnVib"
+        android:layout_alignStart="@+id/btnVib"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vol-"
+        android:id="@+id/btnVolDown"
+        android:layout_alignTop="@+id/volumeBar"
+        android:layout_alignLeft="@+id/volumeBar"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vol+"
+        android:id="@+id/btnVolUp"
+        android:layout_alignTop="@+id/volumeBar"
+        android:layout_alignRight="@+id/volumeBar"
+        android:layout_marginTop="50dp"/>
+
+    <ProgressBar
+        android:id="@+id/volumeBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
 </RelativeLayout>
